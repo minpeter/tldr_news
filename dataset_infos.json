@@ -1,0 +1,68 @@
+{
+    "all": {
+        "description": "The `tldr_news` dataset was constructed by collecting a daily tech newsletter (available at \nhttps://tldr.tech/newsletter). Then for every piece of news, the \"headline\" and its corresponding \"content\" were \ncollected. Such a dataset can be used to train a model to generate a headline from a input piece of text.\n",
+        "citation": "",
+        "homepage": "",
+        "license": "",
+        "features": {
+            "headline": {
+                "dtype": "string",
+                "id": null,
+                "_type": "Value"
+            },
+            "content": {
+                "dtype": "string",
+                "id": null,
+                "_type": "Value"
+            },
+            "category": {
+                "num_classes": 5,
+                "names": [
+                    "Sponsor",
+                    "Big Tech & Startups",
+                    "Science and Futuristic Technology",
+                    "Programming, Design & Data Science",
+                    "Miscellaneous"
+                ],
+                "id": null,
+                "_type": "ClassLabel"
+            }
+        },
+        "post_processed": null,
+        "supervised_keys": null,
+        "task_templates": null,
+        "builder_name": "tldr_news_dataset",
+        "config_name": "all",
+        "version": {
+            "version_str": "1.2.0",
+            "description": null,
+            "major": 1,
+            "minor": 2,
+            "patch": 0
+        },
+        "splits": {
+            "train": {
+                "name": "train",
+                "num_bytes": 4000442,
+                "num_examples": 7138,
+                "dataset_name": "tldr_news_dataset"
+            },
+            "test": {
+                "name": "test",
+                "num_bytes": 443889,
+                "num_examples": 794,
+                "dataset_name": "tldr_news_dataset"
+            }
+        },
+        "download_checksums": {
+            "https://github.com/JulesBelveze/tldr_news/blob/main/1.2.0.tar.gz?raw=true": {
+                "num_bytes": 1706037,
+                "checksum": "191eecc8ac35c86b8ca726753a85b8c5909890be8d8fade3c23ad41bbaef7a78"
+            }
+        },
+        "download_size": 1706037,
+        "post_processing_size": null,
+        "dataset_size": 4444331,
+        "size_in_bytes": 6150368
+    }
+}
